@@ -1,17 +1,23 @@
 * {
 	margin: 0;
 	padding: 0;
-	background: linear-gradient(#777777, #cccccc);
 }
 body {
 	display: flex;
+	background: linear-gradient(#777777, #cccccc) repeat;
 }
 body > section {
 	flex-basis: 50%;
 }
 textarea {
-	width: 100%;
+	width: 50vh;
 	height: 90vh;
+	border: 3px solid #454644;
+	background: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(199, 199, 199));
+}
+form {
+	display:inline-block;
+	position:relative;
 }
 img {
 	width: 100%;
@@ -20,6 +26,17 @@ img {
 h1 {
 	font-family: Arial, Helvetica, sans-serif;
 	text-shadow: 3px 3px 5px black; 
-	background: linear-gradient(to bottom right, rgb(255, 81, 0), rgb(255, 161, 21));
+	background: linear-gradient(to bottom right, rgb(255, 81, 0), rgb(255, 161, 21) 100%);
 	color:#292929
+}
+#button1 {
+	background-color: #ff4c16;
+	border: 1px solid #454644;
+	color: white;
+	text-align: center;
+	font-size: 20px;
+	position:absolute;
+	bottom:10px;
+	right:10px;
+	padding: 14px 40px;
 }
