@@ -29,14 +29,24 @@ h1 {
 	background: linear-gradient(to bottom right, rgb(255, 81, 0), rgb(255, 161, 21) 100%);
 	color:#292929
 }
-#button1 {
-	background-color: #ff4c16;
+.button {
+	background-color: #ff4c16; 
 	border: 1px solid #454644;
-	color: white;
+	color: rgb(0, 0, 0);
+	padding: 14px 40px;
 	text-align: center;
-	font-size: 20px;
+	display: inline-block;
+  	font-size: 20px;
+  	transition-duration: 0.4s;
+  	cursor: pointer;
 	position:absolute;
 	bottom:10px;
 	right:10px;
-	padding: 14px 40px;
+	border-radius: 12px;
 }
+
+.button2:hover {
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+	background-color: #ce3000;
+  	color: white;
+  }
