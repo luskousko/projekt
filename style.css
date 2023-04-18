@@ -2,13 +2,13 @@
 	margin: 0;
 	padding: 0;
 }
-body {
-	display: flex;
-	background: linear-gradient(#777777, #cccccc) repeat;
-}
-body > section {
-	flex-basis: 50%;
-}
+
+header {
+	padding: 1vh 30px;
+	text-align: center;
+	font-size: 30px;
+	font-family: Verdana;
+  }
 
 body {
 	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
@@ -31,9 +31,14 @@ body {
 
 textarea {
 	width: 50vh;
-	height: 90vh;
+	margin-top: 4vh;
+	margin-left: 8vh;
+	text-align: center;
+	padding: 10px;
+	height: 80vh;
 	border: 3px solid #454644;
 	background: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(199, 199, 199));
+	font-family: Comic sans ms, Helvetica, sans-serif;
 }
 form {
 	display:inline-block;
@@ -45,10 +50,13 @@ img {
 }
 h1 {
 	font-family: Arial, Helvetica, sans-serif;
-	text-shadow: 3px 3px 5px black; 
-	background: linear-gradient(to bottom right, rgb(255, 81, 0), rgb(255, 161, 21) 100%);
-	color:#292929
+	text-shadow: 5px 5px 5px black; 
+	text-shadow: 4px 4px 4px black; 
+	color:#292929;
+	text-align: center;	
+	display: inline-block;
 }
+
 .button {
 	background-color: #ff4c16; 
 	border: 1px solid #454644;
@@ -70,3 +78,4 @@ h1 {
 	background-color: #ce3000;
   	color: white;
   }
+
