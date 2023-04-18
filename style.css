@@ -29,7 +29,7 @@ body {
 
 textarea {
 	width: 50vh;
-	height: 90vh;
+	height: 80vh;
 	border: 3px solid #454644;
 	background: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(199, 199, 199));
 	padding: 5%;
