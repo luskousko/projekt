@@ -2,12 +2,10 @@
 	margin: 0;
 	padding: 0;
 }
-body {
-	display: flex;
-	background: linear-gradient(#777777, #cccccc) repeat;
-}
+
 body > section {
 	flex-basis: 50%;
+	display: flex;
 }
 
 body {
@@ -34,6 +32,7 @@ textarea {
 	height: 90vh;
 	border: 3px solid #454644;
 	background: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(199, 199, 199));
+	padding: 5%;
 }
 form {
 	display:inline-block;
@@ -47,7 +46,9 @@ h1 {
 	font-family: Arial, Helvetica, sans-serif;
 	text-shadow: 3px 3px 5px black; 
 	background: linear-gradient(to bottom right, rgb(255, 81, 0), rgb(255, 161, 21) 100%);
-	color:#292929
+	color:#292929;
+	height: 8%;
+	text-align: center;
 }
 .button {
 	background-color: #ff4c16; 
