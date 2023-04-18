@@ -54,16 +54,16 @@ h1 {
 	background-color: #ff4c16; 
 	border: 1px solid #454644;
 	color: rgb(0, 0, 0);
-	padding: 14px 40px;
+	padding: 3%;
 	text-align: center;
 	display: inline-block;
   	font-size: 20px;
   	transition-duration: 0.4s;
   	cursor: pointer;
 	position:absolute;
-	bottom:10px;
-	right:10px;
-	border-radius: 12px;
+	bottom:20px;
+	right:0px;
+	border-radius: 15px;
 }
 
 .button2:hover {
