@@ -8,6 +8,13 @@ body > section {
 	display: flex;
 }
 
+header {
+	padding: 1vh 30px;
+	text-align: center;
+	font-size: 30px;
+	font-family: Verdana;
+  }
+
 body {
 	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
@@ -29,10 +36,15 @@ body {
 
 textarea {
 	width: 50vh;
-	height: 80vh;
-	border: 3px solid #454644;
+	margin-top: 4vh;
+	margin-left: 8vh;
+	text-align: left;
+	padding: 1rem 2rem;
+	height: 75vh;
+	border: 0.3rem solid #454644;
+	border-style: double;
 	background: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(199, 199, 199));
-	padding: 5%;
+	font-family: Comic sans ms, Helvetica, sans-serif;
 }
 form {
 	display:inline-block;
@@ -44,11 +56,12 @@ img {
 }
 h1 {
 	font-family: Arial, Helvetica, sans-serif;
-	text-shadow: 3px 3px 5px black; 
-	background: linear-gradient(to bottom right, rgb(255, 81, 0), rgb(255, 161, 21) 100%);
+	text-shadow: 5px 5px 5px black; 
+	text-shadow: 4px 4px 4px black; 
 	color:#292929;
-	height: 8%;
-	text-align: center;
+	text-align: center;	
+	display: inline-block;
+	height: 4rem;
 }
 .button {
 	background-color: #ff4c16; 
@@ -61,9 +74,10 @@ h1 {
   	transition-duration: 0.4s;
   	cursor: pointer;
 	position:absolute;
-	bottom:20px;
-	right:0px;
-	border-radius: 15px;
+	bottom:1rem;
+	right:1rem;
+	border-radius: 1.5rem;
+
 }
 
 .button2:hover {
