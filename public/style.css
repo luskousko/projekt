@@ -1,6 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 
 body > section {
@@ -8,14 +9,8 @@ body > section {
 	display: flex;
 }
 
-header {
-	padding: 1vh 30px;
-	text-align: center;
-	font-size: 30px;
-	font-family: Verdana;
-  }
-
 body {
+	
 	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
@@ -55,14 +50,37 @@ img {
 	height: auto;
 }
 h1 {
-	font-family: Arial, Helvetica, sans-serif;
-	text-shadow: 5px 5px 5px black; 
-	text-shadow: 4px 4px 4px black; 
+	font-family: Arial, Helvetica, sans-serif; 
 	color:#292929;
-	text-align: center;	
-	display: inline-block;
+	justify-content: center;	
 	height: 4rem;
+	position: relative;
+	padding: 1vh 30px;
+	text-align: center;
+	font-size: 60px;
 }
+h1::before{
+	content: attr(data-text);
+	position: absolute;
+	color: white;
+	width: 300px;
+	overflow: hidden;
+	white-space: nowrap;
+	animation: animate 8s linear infinite;
+}
+
+@keyframes animate 
+{
+	0%,10%,100%
+	{
+		width: 0;
+	}
+	70%,90%
+	{
+		width: 240px;
+	}
+}
+
 .button {
 	background-color: #ff4c16; 
 	border: 1px solid #454644;
