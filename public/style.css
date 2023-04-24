@@ -32,7 +32,7 @@ body {
 textarea {
 	width: 50vh;
 	margin-top: 4vh;
-	margin-left: 8vh;
+	margin-left: 10vh;
 	text-align: left;
 	padding: 1rem 2rem;
 	height: 75vh;
@@ -177,3 +177,17 @@ h1::before{
 	  filter: saturate(200%) hue-rotate(20deg);
 	}
   }
+	.sekcia2 {
+		width: 75vh;
+		height: 75vh;
+		background-color: rgb(221, 221, 221);
+		display: inline-block;
+		margin-top: 4vh;
+		margin-left: 1vh;
+		border: 1px solid black;
+	}
+
+	main {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}

@@ -34,8 +34,10 @@ def render():
     Tato funkcia dostane v HTTP poziadavke zdrojovy kod pre VES a pozadovanu sirku, vyrenderuje obrazok a vrati ho ako HTTP odpoved
   """
   ves = request.form.get('ves') # nacitanie hodnoty ktoru sme dostali v poziadavke
-  width = request.form.get('width') # nacitanie hodnoty ktoru sme dostali v poziadavke
   print(ves)
+  ves = ves.split("\n")
+  print(ves)
+  width = request.form.get('width') # nacitanie hodnoty ktoru sme dostali v poziadavke
   # img = render_ves(ves, width) # tu posleme VES riadky do funkcie render_ves z projektu z prvého polroka
   img = render_ves(ves) 
   return serve_pil_image(img) # vratime vyrenderovany obrazok ako jpg
