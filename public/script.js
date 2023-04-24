@@ -1,4 +1,3 @@
-// handleSubmit je funkcia, ktorá sa spustí keď sa bude mať odoslať náš formulár
 function handleSubmit(e) {
 	e.preventDefault(); // zabrániť vstavenému odosielaniu v prehliadači
 
@@ -18,7 +17,7 @@ function handleSubmit(e) {
 			document.querySelector("#output").src = URL.createObjectURL(image); // Nastavíme src našeho <img> na načítaný obrázok
 		})
 }
-document.querySelector("form").onclick("#button1", handleSubmit); // Nastavíme formulár, aby pri submit udalosti spustil našu handleSubmit funkciu
+document.querySelector("form").addEventListener("submit", handleSubmit); // Nastavíme formulár, aby pri submit udalosti spustil našu handleSubmit funkciu
 
 const signs = document.querySelectorAll('x-sign')
 const randomIn = (min, max) => (
