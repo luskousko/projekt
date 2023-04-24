@@ -1,0 +1,179 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body > section {
+	flex-basis: 50%;
+	display: flex;
+}
+
+body {
+	
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+	}
+	
+	@keyframes gradient {
+	0% {
+	background-position: 0% 50%;
+	}
+	50% {
+	background-position: 100% 50%;
+	}
+	100% {
+	background-position: 0% 50%;
+	}
+	}
+
+textarea {
+	width: 50vh;
+	margin-top: 4vh;
+	margin-left: 8vh;
+	text-align: left;
+	padding: 1rem 2rem;
+	height: 75vh;
+	border: 0.3rem solid #454644;
+	border-style: double;
+	background: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(199, 199, 199));
+	font-family: Comic sans ms, Helvetica, sans-serif;
+}
+
+form {
+	display:inline-block;
+	position:relative;
+}
+img {
+	width: 100%;
+	height: auto;
+}
+h1 {
+	font-family: Arial, Helvetica, sans-serif; 
+	color:#292929;
+	justify-content: center;	
+	height: 4rem;
+	position: relative;
+	padding: 1vh 30px;
+	text-align: center;
+	font-size: 60px;
+
+}
+h1::before{
+	content: attr(data-text);
+	position: absolute;
+	color: white;
+	width: 300px;
+	overflow: hidden;
+	white-space: nowrap;
+	animation: animate 8s linear infinite;
+}
+
+@keyframes animate 
+{
+	0%,10%,100%
+	{
+		width: 0;
+	}
+	70%,90%
+	{
+		width: 240px;
+	}
+}
+
+.button {
+	background-color: #ff4c16; 
+	border: 1px solid #454644;
+	color: rgb(0, 0, 0);
+	padding: 3%;
+	text-align: center;
+	display: inline-block;
+  	font-size: 20px;
+  	transition-duration: 0.4s;
+  	cursor: pointer;
+	position:absolute;
+	bottom:1rem;
+	right:1rem;
+	border-radius: 1.5rem;
+
+}
+
+.button2:hover {
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+	background-color: #ce3000;
+  	color: white;
+  }
+
+  .footer {
+	padding: 3.25rem;
+	text-align: center;
+	color: white;
+	font-size: 50px;
+	font-family: Verdana;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+  }
+
+  x-sign {
+	--interval: 3.5s;
+	display: block;
+	text-shadow: 
+	  0 0 10px var(--color1),
+	  0 0 20px var(--color2),
+	  0 0 40px var(--color3),
+	  0 0 80px var(--color4);
+	will-change: filter, color;
+	filter: saturate(80%);
+	animation: flicker steps(400) var(--interval) 1s infinite;
+  }
+ 
+  x-sign:nth-of-type(1) {
+	font-size: 26px;
+	color: rgb(143, 143, 143);
+	--color1: rgb(138, 138, 138);
+	--color2: rgb(95, 95, 95);
+	--color3: rgb(61, 61, 61);
+	--color4: rgb(36, 36, 36);
+	font-family: Arial, Helvetica, sans-serif;
+  } 
+
+  x-sign:nth-of-type(2) {
+	font-size: 26px;
+	color: rgb(143, 143, 143);
+	--color1: rgb(138, 138, 138);
+	--color2: rgb(95, 95, 95);
+	--color3: rgb(61, 61, 61);
+	--color4: rgb(36, 36, 36);
+	font-family: Arial, Helvetica, sans-serif;
+  }
+
+  x-sign:nth-of-type(3) {
+	font-size: 26px;
+	color: rgb(143, 143, 143);
+	--color1: rgb(138, 138, 138);
+	--color2: rgb(95, 95, 95);
+	--color3: rgb(61, 61, 61);
+	--color4: rgb(36, 36, 36);
+	font-family: Arial, Helvetica, sans-serif;
+  }
+
+  x-sign:nth-of-type(4) {
+	font-size: 26px;
+	color: rgb(143, 143, 143);
+	--color1: rgb(138, 138, 138);
+	--color2: rgb(95, 95, 95);
+	--color3: rgb(61, 61, 61);
+	--color4: rgb(36, 36, 36);
+	font-family: Arial, Helvetica, sans-serif;
+  }
+
+  
+  @keyframes flicker {
+	50% {
+	  color: rgb(0, 0, 0);
+	  filter: saturate(200%) hue-rotate(20deg);
+	}
+  }
