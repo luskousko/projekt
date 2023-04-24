@@ -41,6 +41,7 @@ textarea {
 	background: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(199, 199, 199));
 	font-family: Comic sans ms, Helvetica, sans-serif;
 }
+
 form {
 	display:inline-block;
 	position:relative;
@@ -58,6 +59,7 @@ h1 {
 	padding: 1vh 30px;
 	text-align: center;
 	font-size: 60px;
+
 }
 h1::before{
 	content: attr(data-text);
@@ -102,4 +104,76 @@ h1::before{
 	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 	background-color: #ce3000;
   	color: white;
+  }
+
+  .footer {
+	padding: 3.25rem;
+	text-align: center;
+	color: white;
+	font-size: 50px;
+	font-family: Verdana;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+  }
+
+  x-sign {
+	--interval: 3.5s;
+	display: block;
+	text-shadow: 
+	  0 0 10px var(--color1),
+	  0 0 20px var(--color2),
+	  0 0 40px var(--color3),
+	  0 0 80px var(--color4);
+	will-change: filter, color;
+	filter: saturate(80%);
+	animation: flicker steps(400) var(--interval) 1s infinite;
+  }
+ 
+  x-sign:nth-of-type(1) {
+	font-size: 26px;
+	color: rgb(143, 143, 143);
+	--color1: rgb(138, 138, 138);
+	--color2: rgb(95, 95, 95);
+	--color3: rgb(61, 61, 61);
+	--color4: rgb(36, 36, 36);
+	font-family: Arial, Helvetica, sans-serif;
+  } 
+
+  x-sign:nth-of-type(2) {
+	font-size: 26px;
+	color: rgb(143, 143, 143);
+	--color1: rgb(138, 138, 138);
+	--color2: rgb(95, 95, 95);
+	--color3: rgb(61, 61, 61);
+	--color4: rgb(36, 36, 36);
+	font-family: Arial, Helvetica, sans-serif;
+  }
+
+  x-sign:nth-of-type(3) {
+	font-size: 26px;
+	color: rgb(143, 143, 143);
+	--color1: rgb(138, 138, 138);
+	--color2: rgb(95, 95, 95);
+	--color3: rgb(61, 61, 61);
+	--color4: rgb(36, 36, 36);
+	font-family: Arial, Helvetica, sans-serif;
+  }
+
+  x-sign:nth-of-type(4) {
+	font-size: 26px;
+	color: rgb(143, 143, 143);
+	--color1: rgb(138, 138, 138);
+	--color2: rgb(95, 95, 95);
+	--color3: rgb(61, 61, 61);
+	--color4: rgb(36, 36, 36);
+	font-family: Arial, Helvetica, sans-serif;
+  }
+
+  
+  @keyframes flicker {
+	50% {
+	  color: rgb(0, 0, 0);
+	  filter: saturate(200%) hue-rotate(20deg);
+	}
   }
