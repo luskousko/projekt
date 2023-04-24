@@ -36,7 +36,7 @@ textarea {
 	text-align: left;
 	padding: 1rem 2rem;
 	height: 75vh;
-	border: 0.3rem solid #454644;
+	border: 0.3rem solid black;
 	border-style: double;
 	background: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(199, 199, 199));
 	font-family: Comic sans ms, Helvetica, sans-serif;
@@ -184,7 +184,8 @@ h1::before{
 		display: inline-block;
 		margin-top: 4vh;
 		margin-left: 1vh;
-		border: 1px solid black;
+		border: 0.3rem solid black;
+		border-style: double;
 	}
 
 	main {
