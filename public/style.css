@@ -179,7 +179,7 @@ h1::before{
   }
 	.sekcia2 {
 		width: 75vh;
-		height: 75vh;
+		height: 500px;
 		background-color: rgb(221, 221, 221);
 		display: inline-block;
 		margin-top: 4vh;
