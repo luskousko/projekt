@@ -171,39 +171,41 @@ def render_ves(ves):
           line = line.split(" ")
           #print(line)
           if line[0] == "CIRCLE":
-              circle_color = hexColor(line[5])
-              circle(img, (round(float(line[1])), round(float(line[2]))), round(float(line[3])), round(float(line[4])), circle_color)
+                circle_color = hexColor(line[5])
+                circle(img, (round(float(line[1])), round(float(line[2]))), round(float(line[3])), round(float(line[4])), circle_color)
 
           elif line[0] == "CLEAR":
-              clear_color = hexColor(line[1])
-              fill_rect(img, (0, 0), width, height, clear_color)
+                clear_color = hexColor(line[1])
+                fill_rect(img, (0, 0), width, height, clear_color)
 
           elif line[0] == "FILL_CIRCLE":
-              fcircle_color = hexColor(line[4])
-              fill_circle(img, (round(float(line[1])), round(float(line[2]))), round(float(line[3])), fcircle_color)
+                fcircle_color = hexColor(line[4])
+                fill_circle(img, (round(float(line[1])), round(float(line[2]))), round(float(line[3])), fcircle_color)
 
           elif line[0] == "LINE":
-              line_color = hexColor(line[6])
-              thick_line(img, (round(float(line[1])), round(float(line[2]))), (round(float(line[3])), round(float(line[4]))), round(float(line[5])), line_color)                
+                line_color = hexColor(line[6])
+                thick_line(img, (round(float(line[1])), round(float(line[2]))), (round(float(line[3])), round(float(line[4]))), round(float(line[5])), line_color)                
 
           elif line[0] == "FILL_RECT":
-              frect_color = hexColor(line[5])
-              fill_rect(img, (round(float(line[1])), round(float(line[2]))), round(float(line[3])), round(float(line[4])), frect_color)
-          
+                frect_color = hexColor(line[5])
+                fill_rect(img, (round(float(line[1])), round(float(line[2]))), round(float(line[3])), round(float(line[4])), frect_color)
+            
           elif line[0] == "RECT":
-              rect_color = hexColor(line[6])
-              rect(img, (round(float(line[1])), round(float(line[2]))), round(float(line[3])), round(float(line[4])), round(float(line[5])), rect_color)
+                rect_color = hexColor(line[6])
+                rect(img, (round(float(line[1])), round(float(line[2]))), round(float(line[3])), round(float(line[4])), round(float(line[5])), rect_color)
 
           elif line[0] == "TRIANGLE":
-              triangle_color = hexColor(line[8])
-              triangle(img, (round(float(line[1])), round(float(line[2]))), (round(float(line[3])), round(float(line[4]))), (round(float(line[5])), round(float(line[6]))),round(float(line[7])) ,triangle_color)
+                triangle_color = hexColor(line[8])
+                triangle(img, (round(float(line[1])), round(float(line[2]))), (round(float(line[3])), round(float(line[4]))), (round(float(line[5])), round(float(line[6]))),round(float(line[7])) ,triangle_color)
 
           elif line[0] == "FILL_TRIANGLE":
-              ftriangle_color = hexColor(line[7])
-              fill_triangle(img, (round(float(line[1])), round(float(line[2]))), (round(float(line[3])), round(float(line[4]))), (round(float(line[5])), round(float(line[6]))), ftriangle_color)
-   except:
+                ftriangle_color = hexColor(line[7])
+                
+                fill_triangle(img, (round(float(line[1])), round(float(line[2]))), (round(float(line[3])), round(float(line[4]))), (round(float(line[5])), round(float(line[6]))), ftriangle_color)
+    except:
       img = Image.new('RGB', (500, 500), (255, 255, 255))
       fill_triangle(img, (250, 250), (200, 100), (300, 100),(255,0,0))
       fill_circle(img, (250, 300), 30, (255, 0, 0))
       return img
     return img
+      
