@@ -30,12 +30,12 @@ body {
 	}
 
 textarea {
-	width: 50vh;
+	width: 75vh;
 	margin-top: 4vh;
-	margin-left: 10vh;
+	margin-left: 15vh;
 	text-align: left;
 	padding: 1rem 2rem;
-	height: 75vh;
+	height: 500px;
 	border: 0.3rem solid black;
 	border-style: double;
 	background: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(199, 199, 199));
@@ -48,7 +48,7 @@ form {
 }
 img {
 	width: 100%;
-	height: auto;
+	height: 100%;
 }
 h1 {
 	font-family: Arial, Helvetica, sans-serif; 
@@ -183,7 +183,7 @@ h1::before{
 		background-color: rgb(221, 221, 221);
 		display: inline-block;
 		margin-top: 4vh;
-		margin-left: 1vh;
+		margin-left: 20vh;
 		border: 0.3rem solid black;
 		border-style: double;
 	}
